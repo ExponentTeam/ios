@@ -3,80 +3,137 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85A4BE912618C01400A68EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A4BE902618C01400A68EBD /* AppDelegate.swift */; };
-		85A4BE932618C01400A68EBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A4BE922618C01400A68EBD /* SceneDelegate.swift */; };
-		85A4BE952618C01400A68EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A4BE942618C01400A68EBD /* ViewController.swift */; };
-		85A4BE982618C01400A68EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A4BE962618C01400A68EBD /* Main.storyboard */; };
-		85A4BE9A2618C01500A68EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A4BE992618C01500A68EBD /* Assets.xcassets */; };
-		85A4BE9D2618C01500A68EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A4BE9B2618C01500A68EBD /* LaunchScreen.storyboard */; };
+		0CFF2BAD7A722A1C4E7651F1 /* Pods_CarAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC50F1ED887152494EE7C19 /* Pods_CarAlarm.framework */; };
+		85596BBA2618DD3B008AD8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BB92618DD3B008AD8FD /* AppDelegate.swift */; };
+		85596BBC2618DD3B008AD8FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BBB2618DD3B008AD8FD /* SceneDelegate.swift */; };
+		85596BBE2618DD3B008AD8FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BBD2618DD3B008AD8FD /* ViewController.swift */; };
+		85596BC12618DD3B008AD8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85596BBF2618DD3B008AD8FD /* Main.storyboard */; };
+		85596BC32618DD3D008AD8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85596BC22618DD3D008AD8FD /* Assets.xcassets */; };
+		85596BC62618DD3D008AD8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85596BC42618DD3D008AD8FD /* LaunchScreen.storyboard */; };
+		85596BD12618DDBC008AD8FD /* SighUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BD02618DDBC008AD8FD /* SighUpViewController.swift */; };
+		85596BD52618DDCC008AD8FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BD42618DDCC008AD8FD /* LoginViewController.swift */; };
+		85596BD82618DDD5008AD8FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BD72618DDD5008AD8FD /* HomeViewController.swift */; };
+		85596BDB2619176A008AD8FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85596BDA2619176A008AD8FD /* GoogleService-Info.plist */; };
+		85596C03261927FE008AD8FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596C02261927FE008AD8FD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		85A4BE8D2618C01400A68EBD /* CarAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		85A4BE902618C01400A68EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85A4BE922618C01400A68EBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85A4BE942618C01400A68EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85A4BE972618C01400A68EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		85A4BE992618C01500A68EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		85A4BE9C2618C01500A68EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85A4BE9E2618C01500A68EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3666EAB31B38B0F3E13846A7 /* Pods-CarAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarAlarm.debug.xcconfig"; path = "Target Support Files/Pods-CarAlarm/Pods-CarAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		85596BB62618DD3B008AD8FD /* CarAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85596BB92618DD3B008AD8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85596BBB2618DD3B008AD8FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85596BBD2618DD3B008AD8FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85596BC02618DD3B008AD8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85596BC22618DD3D008AD8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85596BC52618DD3D008AD8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85596BC72618DD3D008AD8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85596BD02618DDBC008AD8FD /* SighUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighUpViewController.swift; sourceTree = "<group>"; };
+		85596BD42618DDCC008AD8FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		85596BD72618DDD5008AD8FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		85596BDA2619176A008AD8FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85596C02261927FE008AD8FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9DC50F1ED887152494EE7C19 /* Pods_CarAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75F00952809FDDE893E1AEA /* Pods-CarAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarAlarm.release.xcconfig"; path = "Target Support Files/Pods-CarAlarm/Pods-CarAlarm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		85A4BE8A2618C01400A68EBD /* Frameworks */ = {
+		85596BB32618DD3B008AD8FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFF2BAD7A722A1C4E7651F1 /* Pods_CarAlarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		85A4BE842618C01400A68EBD = {
+		0E00BEA0CAFF5DA7F2863535 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				85A4BE8F2618C01400A68EBD /* CarAlarm */,
-				85A4BE8E2618C01400A68EBD /* Products */,
+				3666EAB31B38B0F3E13846A7 /* Pods-CarAlarm.debug.xcconfig */,
+				E75F00952809FDDE893E1AEA /* Pods-CarAlarm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D2B5145841CD3ECEE68A9B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DC50F1ED887152494EE7C19 /* Pods_CarAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85596BAD2618DD3B008AD8FD = {
+			isa = PBXGroup;
+			children = (
+				85596BB82618DD3B008AD8FD /* CarAlarm */,
+				85596BB72618DD3B008AD8FD /* Products */,
+				0E00BEA0CAFF5DA7F2863535 /* Pods */,
+				7D2B5145841CD3ECEE68A9B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		85A4BE8E2618C01400A68EBD /* Products */ = {
+		85596BB72618DD3B008AD8FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85A4BE8D2618C01400A68EBD /* CarAlarm.app */,
+				85596BB62618DD3B008AD8FD /* CarAlarm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85A4BE8F2618C01400A68EBD /* CarAlarm */ = {
+		85596BB82618DD3B008AD8FD /* CarAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				85A4BE902618C01400A68EBD /* AppDelegate.swift */,
-				85A4BE922618C01400A68EBD /* SceneDelegate.swift */,
-				85A4BE942618C01400A68EBD /* ViewController.swift */,
-				85A4BE962618C01400A68EBD /* Main.storyboard */,
-				85A4BE992618C01500A68EBD /* Assets.xcassets */,
-				85A4BE9B2618C01500A68EBD /* LaunchScreen.storyboard */,
-				85A4BE9E2618C01500A68EBD /* Info.plist */,
+				85596C01261927C5008AD8FD /* Helpers */,
+				85596BCE2618DD54008AD8FD /* View Controller */,
+				85596BB92618DD3B008AD8FD /* AppDelegate.swift */,
+				85596BBB2618DD3B008AD8FD /* SceneDelegate.swift */,
+				85596BBF2618DD3B008AD8FD /* Main.storyboard */,
+				85596BC22618DD3D008AD8FD /* Assets.xcassets */,
+				85596BC42618DD3D008AD8FD /* LaunchScreen.storyboard */,
+				85596BDA2619176A008AD8FD /* GoogleService-Info.plist */,
+				85596BC72618DD3D008AD8FD /* Info.plist */,
 			);
 			path = CarAlarm;
+			sourceTree = "<group>";
+		};
+		85596BCE2618DD54008AD8FD /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85596BBD2618DD3B008AD8FD /* ViewController.swift */,
+				85596BD02618DDBC008AD8FD /* SighUpViewController.swift */,
+				85596BD42618DDCC008AD8FD /* LoginViewController.swift */,
+				85596BD72618DDD5008AD8FD /* HomeViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		85596C01261927C5008AD8FD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				85596C02261927FE008AD8FD /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85A4BE8C2618C01400A68EBD /* CarAlarm */ = {
+		85596BB52618DD3B008AD8FD /* CarAlarm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85A4BEA12618C01500A68EBD /* Build configuration list for PBXNativeTarget "CarAlarm" */;
+			buildConfigurationList = 85596BCA2618DD3D008AD8FD /* Build configuration list for PBXNativeTarget "CarAlarm" */;
 			buildPhases = (
-				85A4BE892618C01400A68EBD /* Sources */,
-				85A4BE8A2618C01400A68EBD /* Frameworks */,
-				85A4BE8B2618C01400A68EBD /* Resources */,
+				3E90262D4875925092BE5C12 /* [CP] Check Pods Manifest.lock */,
+				85596BB22618DD3B008AD8FD /* Sources */,
+				85596BB32618DD3B008AD8FD /* Frameworks */,
+				85596BB42618DD3B008AD8FD /* Resources */,
+				187EA545F097F13C61BBF954 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,24 +141,24 @@
 			);
 			name = CarAlarm;
 			productName = CarAlarm;
-			productReference = 85A4BE8D2618C01400A68EBD /* CarAlarm.app */;
+			productReference = 85596BB62618DD3B008AD8FD /* CarAlarm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		85A4BE852618C01400A68EBD /* Project object */ = {
+		85596BAE2618DD3B008AD8FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					85A4BE8C2618C01400A68EBD = {
+					85596BB52618DD3B008AD8FD = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 85A4BE882618C01400A68EBD /* Build configuration list for PBXProject "CarAlarm" */;
+			buildConfigurationList = 85596BB12618DD3B008AD8FD /* Build configuration list for PBXProject "CarAlarm" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,55 +166,102 @@
 				en,
 				Base,
 			);
-			mainGroup = 85A4BE842618C01400A68EBD;
-			productRefGroup = 85A4BE8E2618C01400A68EBD /* Products */;
+			mainGroup = 85596BAD2618DD3B008AD8FD;
+			productRefGroup = 85596BB72618DD3B008AD8FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85A4BE8C2618C01400A68EBD /* CarAlarm */,
+				85596BB52618DD3B008AD8FD /* CarAlarm */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		85A4BE8B2618C01400A68EBD /* Resources */ = {
+		85596BB42618DD3B008AD8FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A4BE9D2618C01500A68EBD /* LaunchScreen.storyboard in Resources */,
-				85A4BE9A2618C01500A68EBD /* Assets.xcassets in Resources */,
-				85A4BE982618C01400A68EBD /* Main.storyboard in Resources */,
+				85596BC62618DD3D008AD8FD /* LaunchScreen.storyboard in Resources */,
+				85596BDB2619176A008AD8FD /* GoogleService-Info.plist in Resources */,
+				85596BC32618DD3D008AD8FD /* Assets.xcassets in Resources */,
+				85596BC12618DD3B008AD8FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		187EA545F097F13C61BBF954 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarAlarm/Pods-CarAlarm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarAlarm/Pods-CarAlarm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarAlarm/Pods-CarAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E90262D4875925092BE5C12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarAlarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		85A4BE892618C01400A68EBD /* Sources */ = {
+		85596BB22618DD3B008AD8FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A4BE952618C01400A68EBD /* ViewController.swift in Sources */,
-				85A4BE912618C01400A68EBD /* AppDelegate.swift in Sources */,
-				85A4BE932618C01400A68EBD /* SceneDelegate.swift in Sources */,
+				85596BD12618DDBC008AD8FD /* SighUpViewController.swift in Sources */,
+				85596BBE2618DD3B008AD8FD /* ViewController.swift in Sources */,
+				85596BBA2618DD3B008AD8FD /* AppDelegate.swift in Sources */,
+				85596BD52618DDCC008AD8FD /* LoginViewController.swift in Sources */,
+				85596C03261927FE008AD8FD /* Constants.swift in Sources */,
+				85596BBC2618DD3B008AD8FD /* SceneDelegate.swift in Sources */,
+				85596BD82618DDD5008AD8FD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		85A4BE962618C01400A68EBD /* Main.storyboard */ = {
+		85596BBF2618DD3B008AD8FD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				85A4BE972618C01400A68EBD /* Base */,
+				85596BC02618DD3B008AD8FD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		85A4BE9B2618C01500A68EBD /* LaunchScreen.storyboard */ = {
+		85596BC42618DD3D008AD8FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				85A4BE9C2618C01500A68EBD /* Base */,
+				85596BC52618DD3D008AD8FD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		85A4BE9F2618C01500A68EBD /* Debug */ = {
+		85596BC82618DD3D008AD8FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +330,7 @@
 			};
 			name = Debug;
 		};
-		85A4BEA02618C01500A68EBD /* Release */ = {
+		85596BC92618DD3D008AD8FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,8 +385,9 @@
 			};
 			name = Release;
 		};
-		85A4BEA22618C01500A68EBD /* Debug */ = {
+		85596BCB2618DD3D008AD8FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3666EAB31B38B0F3E13846A7 /* Pods-CarAlarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,8 +404,9 @@
 			};
 			name = Debug;
 		};
-		85A4BEA32618C01500A68EBD /* Release */ = {
+		85596BCC2618DD3D008AD8FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75F00952809FDDE893E1AEA /* Pods-CarAlarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,25 +426,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85A4BE882618C01400A68EBD /* Build configuration list for PBXProject "CarAlarm" */ = {
+		85596BB12618DD3B008AD8FD /* Build configuration list for PBXProject "CarAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				85A4BE9F2618C01500A68EBD /* Debug */,
-				85A4BEA02618C01500A68EBD /* Release */,
+				85596BC82618DD3D008AD8FD /* Debug */,
+				85596BC92618DD3D008AD8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85A4BEA12618C01500A68EBD /* Build configuration list for PBXNativeTarget "CarAlarm" */ = {
+		85596BCA2618DD3D008AD8FD /* Build configuration list for PBXNativeTarget "CarAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				85A4BEA22618C01500A68EBD /* Debug */,
-				85A4BEA32618C01500A68EBD /* Release */,
+				85596BCB2618DD3D008AD8FD /* Debug */,
+				85596BCC2618DD3D008AD8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 85A4BE852618C01400A68EBD /* Project object */;
+	rootObject = 85596BAE2618DD3B008AD8FD /* Project object */;
 }
