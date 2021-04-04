@@ -80,7 +80,7 @@ class SighUpViewController: UIViewController {
                     self.showError("Error creating user")
                 }else{
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["name" : name,"surname" : surname, "uid" : result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["name":name, "surname":surname, "uid":result!.user.uid]) { (error) in
                         if error != nil{
                             self.showError("blat...")
                         }
