@@ -9,7 +9,7 @@ class Utilities {
         
         
         // Remove border on text field
-        textfield.borderStyle = .none
+//        textfield.borderStyle = .none
         
         textfield.layer.cornerRadius = 8.0
         
