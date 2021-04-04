@@ -24,14 +24,14 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4a0-7G-j3W"/>
                                         </constraints>
-                                        <state key="normal" title="Sigh Up"/>
+                                        <state key="normal" title="Sign Up" backgroundImage="password.png"/>
                                         <connections>
                                             <segue destination="9cs-mb-D7I" kind="show" id="dbr-20-Hxz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yR-ul-gVY">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
-                                        <state key="normal" title="Login"/>
+                                        <state key="normal" title="Login" backgroundImage="password.png"/>
                                         <connections>
                                             <segue destination="OIR-rh-8lD" kind="show" id="5Sv-Pn-6g1"/>
                                         </connections>
@@ -51,6 +51,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jvx-Cd-9qA"/>
+                    <connections>
+                        <outlet property="loginButton" destination="6yR-ul-gVY" id="G65-op-r2D"/>
+                        <outlet property="signUpButton" destination="oHd-Kj-KOn" id="AIP-Vp-8C1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,23 +115,27 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xX8-4B-Yrk">
                                 <rect key="frame" x="40" y="447.5" width="334" height="320.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KvD-jJ-wad">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KvD-jJ-wad">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.23552742600000001" green="0.233530879" blue="0.35295388100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-dB-PDB">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-dB-PDB">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.2355086207" green="0.23367506269999999" blue="0.34510987999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-lc-QFy">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-lc-QFy">
                                         <rect key="frame" x="0.0" y="120" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.2355086207" green="0.23367506269999999" blue="0.34510987999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcu-3B-UGA">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcu-3B-UGA">
                                         <rect key="frame" x="0.0" y="180" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.2355086207" green="0.23367506269999999" blue="0.34510987999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -136,7 +144,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Co4-5d-g6R"/>
                                         </constraints>
-                                        <state key="normal" title="Sigh Up"/>
+                                        <state key="normal" title="Sign Up" backgroundImage="password.png"/>
                                         <connections>
                                             <action selector="sighUpTapped:" destination="9cs-mb-D7I" eventType="touchUpInside" id="sSh-gf-fSs"/>
                                         </connections>
@@ -201,13 +209,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sVW-cF-4Ob">
                                 <rect key="frame" x="40" y="567.5" width="334" height="200.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwj-L7-JtU">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwj-L7-JtU">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.2355086207" green="0.23367506269999999" blue="0.34510987999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b41-jA-jys">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b41-jA-jys">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.2355086207" green="0.23367506269999999" blue="0.34510987999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -216,7 +226,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="I5i-zw-DOr"/>
                                         </constraints>
-                                        <state key="normal" title="Login"/>
+                                        <state key="normal" title="Login" backgroundImage="password.png"/>
                                         <connections>
                                             <action selector="loginTapped:" destination="OIR-rh-8lD" eventType="touchUpInside" id="Yh5-c4-fce"/>
                                         </connections>
@@ -271,6 +281,7 @@
         <segue reference="XqU-zZ-o9a"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="password.png" width="425" height="60"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

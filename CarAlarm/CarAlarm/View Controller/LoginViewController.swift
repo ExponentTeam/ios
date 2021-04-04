@@ -24,6 +24,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "welcome")
+        backgroundImage.contentMode = .scaleAspectFill
+        view.insertSubview(backgroundImage, at: 0)
 
         setUpElements()
         // Do any additional setup after loading the view.
@@ -34,7 +39,9 @@ class LoginViewController: UIViewController {
         errorLabel.alpha = 0
         
         // Style the elements
-    
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(loginButton)
         
     }
 
