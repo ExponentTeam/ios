@@ -9,7 +9,6 @@ import UIKit
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
-
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -19,8 +18,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
-    
-    
+    @IBOutlet weak var createButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +40,7 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
+        Utilities.styleFilledButton(createButton)
         
     }
 

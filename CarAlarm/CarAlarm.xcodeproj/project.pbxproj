@@ -20,7 +20,11 @@
 		85596BD82618DDD5008AD8FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596BD72618DDD5008AD8FD /* HomeViewController.swift */; };
 		85596BDB2619176A008AD8FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85596BDA2619176A008AD8FD /* GoogleService-Info.plist */; };
 		85596C03261927FE008AD8FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85596C02261927FE008AD8FD /* Constants.swift */; };
+		85AEB1D926224F610088C306 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AEB1D826224F610088C306 /* CameraViewController.swift */; };
+		85AEB1DC262254220088C306 /* MicroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AEB1DB262254220088C306 /* MicroViewController.swift */; };
+		85AEB1DF262254360088C306 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AEB1DE262254360088C306 /* LastViewController.swift */; };
 		85B49D0D2619E03A00D9D1F7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B49D0C2619E03A00D9D1F7 /* Utilities.swift */; };
+		85C46B89261F47AF00036DC2 /* or_field.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C46B88261F47AF00036DC2 /* or_field.png */; };
 		85F06A82261A14A600C11063 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 85F06A81261A14A600C11063 /* welcome.png */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +44,11 @@
 		85596BD72618DDD5008AD8FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		85596BDA2619176A008AD8FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		85596C02261927FE008AD8FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85AEB1D826224F610088C306 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		85AEB1DB262254220088C306 /* MicroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroViewController.swift; sourceTree = "<group>"; };
+		85AEB1DE262254360088C306 /* LastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
 		85B49D0C2619E03A00D9D1F7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		85C46B88261F47AF00036DC2 /* or_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = or_field.png; path = media/or_field.png; sourceTree = SOURCE_ROOT; };
 		85F06A81261A14A600C11063 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = media/welcome.png; sourceTree = SOURCE_ROOT; };
 		9DC50F1ED887152494EE7C19 /* Pods_CarAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75F00952809FDDE893E1AEA /* Pods-CarAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarAlarm.release.xcconfig"; path = "Target Support Files/Pods-CarAlarm/Pods-CarAlarm.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 		850AAA2C2619F63200722526 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				85C46B88261F47AF00036DC2 /* or_field.png */,
 				85F06A81261A14A600C11063 /* welcome.png */,
 				850AAA2D2619F65C00722526 /* password.png */,
 			);
@@ -123,9 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				85596BBD2618DD3B008AD8FD /* ViewController.swift */,
-				85596BD02618DDBC008AD8FD /* SighUpViewController.swift */,
 				85596BD42618DDCC008AD8FD /* LoginViewController.swift */,
+				85596BD02618DDBC008AD8FD /* SighUpViewController.swift */,
 				85596BD72618DDD5008AD8FD /* HomeViewController.swift */,
+				85AEB1D826224F610088C306 /* CameraViewController.swift */,
+				85AEB1DB262254220088C306 /* MicroViewController.swift */,
+				85AEB1DE262254360088C306 /* LastViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -203,6 +215,7 @@
 				85596BDB2619176A008AD8FD /* GoogleService-Info.plist in Resources */,
 				850AAA2E2619F65D00722526 /* password.png in Resources */,
 				85596BC32618DD3D008AD8FD /* Assets.xcassets in Resources */,
+				85C46B89261F47AF00036DC2 /* or_field.png in Resources */,
 				85596BC12618DD3B008AD8FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,13 +270,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				85596BD12618DDBC008AD8FD /* SighUpViewController.swift in Sources */,
+				85AEB1DF262254360088C306 /* LastViewController.swift in Sources */,
 				85596BBE2618DD3B008AD8FD /* ViewController.swift in Sources */,
 				85596BBA2618DD3B008AD8FD /* AppDelegate.swift in Sources */,
 				85596BD52618DDCC008AD8FD /* LoginViewController.swift in Sources */,
 				85596C03261927FE008AD8FD /* Constants.swift in Sources */,
+				85AEB1DC262254220088C306 /* MicroViewController.swift in Sources */,
 				85596BBC2618DD3B008AD8FD /* SceneDelegate.swift in Sources */,
 				85B49D0D2619E03A00D9D1F7 /* Utilities.swift in Sources */,
 				85596BD82618DDD5008AD8FD /* HomeViewController.swift in Sources */,
+				85AEB1D926224F610088C306 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

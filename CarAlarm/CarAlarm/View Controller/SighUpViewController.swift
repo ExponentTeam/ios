@@ -97,7 +97,6 @@ class SighUpViewController: UIViewController {
                         }
                     }
                     
-                    
                     self.transitionToHome()
                 }
                 
