@@ -122,7 +122,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhW-IC-jPS">
                                         <rect key="frame" x="310.5" y="0.0" width="103.5" height="82"/>
-                                        <state key="normal" image="smiley.fill" catalog="system"/>
+                                        <state key="normal" image="map" catalog="system"/>
                                         <connections>
                                             <action selector="lastTapped:" destination="SbN-A4-UYR" eventType="touchUpInside" id="Ajo-uW-K8D"/>
                                         </connections>
@@ -198,7 +198,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-oh-GaL">
                                         <rect key="frame" x="310.5" y="0.0" width="103.5" height="82"/>
-                                        <state key="normal" image="smiley.fill" catalog="system"/>
+                                        <state key="normal" image="map" catalog="system"/>
                                         <connections>
                                             <action selector="lastTapped:" destination="uMz-zs-qiX" eventType="touchUpInside" id="ZVu-1Y-097"/>
                                         </connections>
@@ -271,7 +271,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ct-pr-nze">
                                         <rect key="frame" x="310.5" y="0.0" width="103.5" height="82"/>
-                                        <state key="normal" image="smiley.fill" catalog="system"/>
+                                        <state key="normal" image="map" catalog="system"/>
                                         <connections>
                                             <action selector="lastTapped:" destination="7jk-jE-5bi" eventType="touchUpInside" id="yRH-XW-Voy"/>
                                         </connections>
@@ -347,7 +347,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-kp-UXZ">
                                         <rect key="frame" x="310.5" y="0.0" width="103.5" height="82"/>
-                                        <state key="normal" image="smiley.fill" catalog="system"/>
+                                        <state key="normal" image="map" catalog="system"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -357,28 +357,28 @@
                                     <constraint firstItem="Wt9-Pm-Dq9" firstAttribute="width" secondItem="IAv-1F-ROj" secondAttribute="width" id="yJ9-GF-4ik"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOMETHING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-Xt-HkS">
-                                <rect key="frame" x="158" y="438" width="98.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bqr-XS-PIo">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="815"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ckl-gc-hum"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gk3-d8-BNs" firstAttribute="leading" secondItem="ckl-gc-hum" secondAttribute="leading" id="1XR-TL-ThW"/>
-                            <constraint firstItem="AXa-Xt-HkS" firstAttribute="centerY" secondItem="rP8-zA-wFq" secondAttribute="centerY" id="94y-FZ-KJx"/>
                             <constraint firstItem="Gk3-d8-BNs" firstAttribute="top" secondItem="ckl-gc-hum" secondAttribute="top" constant="770" id="9mv-hk-FmO"/>
+                            <constraint firstItem="bqr-XS-PIo" firstAttribute="leading" secondItem="ckl-gc-hum" secondAttribute="leading" id="N9n-rS-wKt"/>
+                            <constraint firstItem="ckl-gc-hum" firstAttribute="trailing" secondItem="bqr-XS-PIo" secondAttribute="trailing" id="RIg-QH-IsW"/>
                             <constraint firstAttribute="bottom" secondItem="Gk3-d8-BNs" secondAttribute="bottom" id="UMT-1S-SXD"/>
+                            <constraint firstItem="bqr-XS-PIo" firstAttribute="top" secondItem="ckl-gc-hum" secondAttribute="top" constant="-45" id="Vqe-LE-F9P"/>
                             <constraint firstItem="Gk3-d8-BNs" firstAttribute="trailing" secondItem="ckl-gc-hum" secondAttribute="trailing" id="glZ-Xq-Mr7"/>
-                            <constraint firstItem="AXa-Xt-HkS" firstAttribute="centerX" secondItem="rP8-zA-wFq" secondAttribute="centerX" id="jMO-ev-2r7"/>
+                            <constraint firstItem="Gk3-d8-BNs" firstAttribute="top" secondItem="bqr-XS-PIo" secondAttribute="bottom" id="laU-Zi-3jk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="z67-uD-Jmu" id="H00-qe-Zuz"/>
                         <outlet property="homeButton" destination="IAv-1F-ROj" id="XWp-Kq-lf3"/>
                         <outlet property="lastButton" destination="fpu-kp-UXZ" id="ySw-sr-dJ6"/>
+                        <outlet property="mapView" destination="bqr-XS-PIo" id="EgB-Kn-aOU"/>
                         <outlet property="microButton" destination="Wt9-Pm-Dq9" id="4Ah-On-4vc"/>
                     </connections>
                 </viewController>
@@ -505,10 +505,10 @@
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="mic" catalog="system" width="108" height="128"/>
         <image name="or_field.png" width="425" height="29"/>
         <image name="password.png" width="425" height="60"/>
-        <image name="smiley.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
