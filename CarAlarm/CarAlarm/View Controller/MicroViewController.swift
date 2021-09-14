@@ -1,10 +1,3 @@
-//
-//  MicroViewController.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 11.04.2021.
-//
-
 import UIKit
 
 class MicroViewController: UIViewController {
@@ -21,22 +14,15 @@ class MicroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         setUpElements()
-        // Do any additional setup after loading the view.
+        
     }
+    
     func setUpElements() {
-        
-        // Hide the error label
-
-        
-        // Style the elements
-
         Utilities.styleFilledButton1(homeButton)
         Utilities.styleFilledButton1(cameraButton)
         Utilities.styleFilledButton1(microButton)
         Utilities.styleFilledButton1(lastButton)
-        
     }
     
     

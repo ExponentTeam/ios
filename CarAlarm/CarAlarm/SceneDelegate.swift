@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 03.04.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

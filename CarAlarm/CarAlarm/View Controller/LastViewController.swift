@@ -1,10 +1,3 @@
-//
-//  LastViewController.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 11.04.2021.
-//
-
 import CoreLocation
 import MapKit
 import UIKit
@@ -26,9 +19,8 @@ class LastViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         setUpElements()
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -49,7 +41,8 @@ class LastViewController: UIViewController, CLLocationManagerDelegate {
     
     func render(_ location: CLLocation) {
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-
+//        let coordinate = CLLocationCoordinate2D(latitude: 48.9271472, longitude: 24.7187957)
+        
         let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
 
         let region = MKCoordinateRegion(center: coordinate, span: span)
@@ -63,17 +56,10 @@ class LastViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func setUpElements() {
-        
-        // Hide the error label
-
-        
-        // Style the elements
-
         Utilities.styleFilledButton1(homeButton)
         Utilities.styleFilledButton1(cameraButton)
         Utilities.styleFilledButton1(microButton)
         Utilities.styleFilledButton1(lastButton)
-        
     }
     
     @IBAction func homeTapped(_ sender: Any) {

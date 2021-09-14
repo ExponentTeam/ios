@@ -1,10 +1,3 @@
-//
-//  SighUpViewController.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 03.04.2021.
-//
-
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
@@ -34,30 +27,18 @@ class SighUpViewController: UIViewController {
         
         setUpElements()
         
-        // Do any additional setup after loading the view.
     }
+    
     func setUpElements() {
     
-        // Hide the error label
         errorLabel.alpha = 0
     
-        // Style the elements
         Utilities.styleTextField(firstNameTextField)
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(sighUpButton)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     func validateFields() -> String? {
         

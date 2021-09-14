@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 03.04.2021.
-//
-
 import UIKit
 import FirebaseAuth
 
@@ -29,42 +22,29 @@ class LoginViewController: UIViewController {
         view.insertSubview(backgroundImage, at: 0)
 
         setUpElements()
-        // Do any additional setup after loading the view.
+        
     }
+    
     func setUpElements() {
         
-        // Hide the error label
         errorLabel.alpha = 0
         
-        // Style the elements
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
         Utilities.styleFilledButton(createButton)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     
     @IBAction func loginTapped(_ sender: Any) {
         
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        // Signing in the user
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             
             if error != nil {
-                // Couldn't sign in
+
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             }

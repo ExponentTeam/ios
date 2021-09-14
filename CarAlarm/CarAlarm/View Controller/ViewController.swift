@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 03.04.2021.
-//
-
 import UIKit
 import AVKit
 
@@ -24,11 +17,8 @@ class ViewController: UIViewController {
         backgroundImage.contentMode = .scaleAspectFill
         view.insertSubview(backgroundImage, at: 0)
         
-        
-       
-        // Do any additional setup after loading the view.
-        
         setUpElements()
+        
     }
     
     func setUpElements() {

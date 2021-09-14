@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  CarAlarm
-//
-//  Created by Володимир Височанський on 03.04.2021.
-//
-
 import UIKit
 import Firebase
 
@@ -20,8 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
